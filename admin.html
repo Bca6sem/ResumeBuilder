@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard - Resume Builder</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="user-container">
+    <aside class="sidebar">
+      <h2>User Panel</h2>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#create">Create Resume</a></li>
+        <li><a href="#myresumes">My Resumes</a></li>
+        <li><a href="#profile">Edit Profile</a></li>
+        <li><a href="#logout">Logout</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h1>Welcome, John Doe</h1>
+      </header>
+
+      <section id="create" class="actions">
+        <div class="card">
+          <h3>Create New Resume</h3>
+         <a href="index.html"> <button >Start Now</button></a>
+        </div>
+      </section>
+
+      <section id="myresumes" class="resume-list">
+        <h2>My Resumes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date Created</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Software Engineer Resume</td>
+              <td>April 1, 2025</td>
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+                <button>Download</button>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </section>
+
+      <section id="profile" class="profile-edit">
+        <h2>Edit Profile</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Full Name" value="John Doe" required>
+          <input type="email" name="email" placeholder="Email" value="john@example.com" required>
+          <input type="password" name="password" placeholder="New Password">
+          <button type="submit">Update Profile</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+    background: white;
+    color: #0056b3;
+    border: 2px solid #0056b3;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav button:hover {
+    background: #003f80;
+    color: white;
+    border-color: #003f80;
+}
+
+.hero {
+    padding: 80px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h2 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero .cta-buttons button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero .cta-buttons button:hover {
+    background: #003f80;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.stats .stat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+}
+
+.stats .stat-box h3 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin: 0;
+}
+
+.stats .stat-box p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #0056b3;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    .hero {
+        padding: 50px 15px;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero .cta-buttons {
+        flex-direction: column;
+    }
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
